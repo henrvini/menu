@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(213, 213, 213);
+  font-family: sans-serif;
 }
 
 .header {
@@ -21,4 +22,38 @@ body {
 
 h1 {
   color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo {
+  color: white;
+  text-transform: lowercase;
+  letter-spacing: -1px;
+}
+
+.logo span:first-child {
+  color: rgb(131, 2, 131);
+}
+
+.logo span:last-child {
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li a {
+  padding: 17px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: rgb(131, 2, 131);
 }
