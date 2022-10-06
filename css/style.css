@@ -47,29 +47,47 @@ ul {
   display: flex;
 }
 
-.menu li {
+.menu > li {
   position: relative;
 }
 
-.menu li a {
+.menu > li a {
   padding: 17px;
   color: white;
   font-size: 14px;
   text-decoration: none;
-}
-
-.menu li a:hover {
-  background-color: rgb(131, 2, 131);
-}
-
-.menu li:hover .submenu {
   display: block;
 }
 
+.menu > li:hover {
+  background-color: rgb(131, 2, 131);
+}
+
+.menu li:hover > .submenu,
+.submenu li:hover > .submenu {
+  display: block;
+}
+
+/* .submenu li:hover > .submenu */
+
 .submenu {
   position: absolute;
-  top: 34px;
+  top: 50px;
   left: 0;
   display: none;
   background: rgb(131, 2, 131);
+  min-width: 100%;
+}
+
+.submenu li:hover {
+  background: rgb(68, 1, 68);
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li .submenu {
+  top: 0;
+  left: 100%;
 }
