@@ -47,6 +47,10 @@ ul {
   display: flex;
 }
 
+.menu li {
+  position: relative;
+}
+
 .menu li a {
   padding: 17px;
   color: white;
@@ -56,4 +60,16 @@ ul {
 
 .menu li a:hover {
   background-color: rgb(131, 2, 131);
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  display: none;
+  background: rgb(131, 2, 131);
 }
